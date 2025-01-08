@@ -1,4 +1,5 @@
 import { DmsSite, adminConfig } from "@availabs/dms"
+import Auth from './Auth'
 
 function App() {
   return ( 
@@ -8,7 +9,10 @@ function App() {
             app: 'test',
             type: 'ams-dev'
           })
-        }   
+        }
+        routes={[
+          Auth
+        ]} 
       />
   )
 }
