@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 import { authProvider } from "./modules/ams/src" 
 
-const PROJECT_NAME = "hazard_mitigation";
+const PROJECT_NAME = "ams-dev2";
 let API_HOST = "https://graph.availabs.org";
 let AUTH_HOST = "https://graph.availabs.org";
 let CLIENT_HOST = "mitigateny.org";
