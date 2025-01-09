@@ -2,6 +2,8 @@ import { DmsSite, adminConfig } from "@availabs/dms"
 import Auth from './Auth'
 
 function App() {
+  //console.log('auth', Auth)
+  Auth.forEach(d => d.Component = d.element)
   return ( 
       <DmsSite
         dmsConfig = {
@@ -10,9 +12,7 @@ function App() {
             type: 'ams-dev'
           })
         }
-        routes={[
-          Auth
-        ]} 
+        routes={[...Auth]} 
       />
   )
 }
