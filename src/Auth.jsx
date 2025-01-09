@@ -6,11 +6,11 @@ const AuthConfig = {
   children: [
     { type: "ams-login" ,
       path: "login",
-      props: { title: "MitigateNY" }
+      props: { title: "ams-dev2" }
     },
     { ype: "ams-reset-password",
       path: "reset-password",
-      props: { title: "MitigateNY" }
+      props: { title: "ams-dev2" }
     },
     { type: "ams-logout",
       path: "logout",
@@ -23,10 +23,9 @@ const AuthConfig = {
 
     { type: "ams-signup",
       path: "register",
-      // props: { addToGroup: "123" },
       props: {
-        title: "MitigateNY",
-        addToGroup: "NPMRDS_PM3 New Users"
+        title: "ams-dev2",
+        addToGroup: "Users"
       }
     },
     { type: "ams-profile",

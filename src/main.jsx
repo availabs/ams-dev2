@@ -10,6 +10,10 @@ let API_HOST = "https://graph.availabs.org";
 let AUTH_HOST = "https://graph.availabs.org";
 let CLIENT_HOST = "mitigateny.org";
 
+if (process.env.NODE_ENV === "development") {
+  CLIENT_HOST = "localhost:5173";
+}
+
 const AuthEnabledApp = authProvider(App, { AUTH_HOST, PROJECT_NAME, CLIENT_HOST });
 
 
