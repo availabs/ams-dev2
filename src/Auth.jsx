@@ -20,7 +20,10 @@ const AuthConfig = {
     // Redirects user to URL after logging out.
       props: { redirectTo: "/" }
     },
-
+    {
+      type:"ams-messages",
+      path:"messages"
+    },
     { type: "ams-signup",
       path: "register",
       props: {
