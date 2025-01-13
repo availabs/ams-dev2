@@ -12,6 +12,8 @@ let CLIENT_HOST = "mitigateny.org";
 
 if (process.env.NODE_ENV === "development") {
   CLIENT_HOST = "localhost:5173";
+  //API_HOST = "http://localhost:4444"
+  //AUTH_HOST = "http://localhost:4444"
 }
 
 const AuthEnabledApp = enableAuth(App, { AUTH_HOST, PROJECT_NAME, CLIENT_HOST });
